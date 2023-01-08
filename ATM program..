@@ -1,0 +1,35 @@
+# python_program
+I have developed this ATM program by python programming....check it out !!
+
+------------------------------------------------------------------------------------
+print("WELCOME TO THE SBI ATM")
+chances = 3
+
+while chances >= 0:
+    abc=int(input("Enter your Password..."))
+
+    if abc == (1234):
+        print("Unlocked..")
+
+        break
+
+    elif abc != ("1234"):
+        print("Incorrect")
+        chances = chances -1
+
+        if chances==0:
+            print("Sorry You have  reached your maximum limit..")
+
+            break
+
+
+
+
+
+
+
+
+
+
+
+
