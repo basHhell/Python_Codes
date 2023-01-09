@@ -1,0 +1,102 @@
+import time     TIPS :
+                # Code is written in PyCharm IDE, i have tested this code if it does'nt work then fix yourself.
+                # We have imported time module to give more real feel to our program, time module wait for given seconds
+                # before executing other line of code.
+                # In this code i have intentionally not written code ..like for pepperoni( you will understand it later), so try it out yourslf.
+                # Use '-' where it is written.
+
+print("Welcome to Domino's \n")
+input_1=input("What kind of pizza you would like to order..Type Menu\n").capitalize()
+
+if input_1 == ("Menu"):
+    size = input("Large\nSmall\nPick your size :").capitalize()
+    if size == "Large":
+        print("Price is Rs.150")
+        price = int(150)
+        choice = input("What kind of large pizza Veg or Non-Veg \n").capitalize()
+        if choice == "Veg":
+            print("Basic topping : Capsicum and Corn")
+            price_2=int(75)
+            tops = input("We have these available toppings :\nMushroom \nPepperoni\nSelect any of these :").capitalize()
+            if tops == "Mushroom":
+                price_3=int(35)
+                print("Okayy..Processing your order")
+                time.sleep(2)     # Here we have used time module.
+                print("How much money you have.. :\n")
+                money=int(input(""))
+                bill=(price+price_2+price_3)
+                print(f"your Bill is {bill}")
+                change=(money-bill)
+                print(f"Your change is {change}")
+                final=input("Type your address\n")
+                print(f"You will receive your order in 45 min at {final}")    # f string is used.
+        elif choice=="Non-veg":
+            print("Basic topping : Capsicum and Chicken")
+            price_2 = int(90)
+            tops = input("We have these available toppings :\nExtra-chicken \nPepperoni\nSelect any of these :").capitalize()
+            if tops == "Extra-chicken":
+                price_3 = int(55)
+                print("Okayy..Processing your order")
+                time.sleep(2)
+                print("How much money you have.. :\n")
+                money = int(input(""))
+                bill = (price + price_2 + price_3)
+                print(f"your Bill is {bill}")
+                change = (money - bill)
+                print(f"Your change is {change}")
+                final = input("Type your address\n")
+                print(f"You will receive your order in 45 min at {final}")
+
+
+
+    elif size == ("Small"):
+        print("Price is Rs.80")
+        price = int(80)
+        choice = input("What kind of small pizza Veg or Non-veg \n").capitalize()
+        if choice == "Veg":
+            print("Basic toppings : Capsicum and Corn")
+            price_2 = int(60)
+            tops = input("We have these available toppings :\nMushroom \nPepperoni\nSelect any of these :").capitalize()
+            if tops == "Mushroom":
+                price_3 = int(35)
+                print("Okayy..Processing your order")
+                time.sleep(2)
+                print("How much money you have.. :\n")
+                money = int(input(""))
+                bill = (price + price_2 + price_3)
+                print(f"your Bill is {bill}")
+                change = (money - bill)
+                print(f"Your change is {change}")
+                final = input("Type your address\n")
+                print(f"You will receive your order in 35 min at {final}")
+        elif choice == ("Non-veg"):
+            print("Basic topping : Capsicum and Chicken")
+            price_2 = int(90)
+            tops = input("We have these available toppings :\nExtra-chicken \nPepperoni\nSelect any of these :").capitalize()
+            if tops == "Extra-chicken":
+                price_3 = int(55)
+                print("Okayy..Processing your order")
+                time.sleep(2)
+                print("How much money you have.. :\n")
+                money = int(input(""))
+                bill = (price + price_2 + price_3)
+                print(f"your Bill is {bill}")
+                change = (money - bill)
+                print(f"Your change is {change}")
+                final = input("Type your address\n")
+                print(f"You will receive your order in 45 min at {final}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
