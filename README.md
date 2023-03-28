@@ -1,1 +1,1 @@
-College Level Python codes for Hacking and practicing Python Language. 
+College Level Python codes for Hacking and practicing Python language students
